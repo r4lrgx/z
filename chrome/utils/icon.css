@@ -1,0 +1,23 @@
+:root {
+ --z-icon-color: #6e64ff;
+}
+
+:is(.toolbarbutton-icon, .unified-extensions-item-icon, .tab-icon-image, .tab-close-button, .menu-iconic-icon, .urlbar-icon, .identity-icon, .sidebar-icon, .webextension-browser-action > .toolbarbutton-icon, #nav-bar .toolbarbutton-icon, #TabsToolbar .toolbarbutton-icon, #PanelUI-menu-button .toolbarbutton-icon, #unified-extensions-button .toolbarbutton-icon) {
+ -moz-context-properties: fill, stroke !important;
+ fill: var(--z-icon-color) !important;
+ stroke: var(--z-icon-color) !important;
+ color: var(--z-icon-color) !important;
+ transition: filter 0.25s ease, opacity 0.25s ease, transform 0.15s ease;
+}
+
+:is(.toolbarbutton-1, .unified-extensions-item, .tabbrowser-tab):hover :is(.toolbarbutton-icon, .tab-icon-image, .tab-close-button, .unified-extensions-item-icon) {
+ filter: brightness(1.2) drop-shadow(0 0 3px var(--z-icon-color));
+ opacity: 0.9;
+ transform: scale(1.05);
+}
+
+:is(.toolbarbutton-1, .unified-extensions-item, .tabbrowser-tab):active :is(.toolbarbutton-icon, .tab-icon-image, .tab-close-button, .unified-extensions-item-icon) {
+ filter: brightness(0.85);
+ opacity: 0.75;
+ transform: scale(0.95);
+}
