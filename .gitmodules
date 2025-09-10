@@ -1,0 +1,3 @@
+[submodule "theme/Nebula"]
+	path = theme/Nebula
+	url = https://github.com/JustAdumbPrsn/Zen-Nebula
